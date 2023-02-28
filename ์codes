@@ -1,0 +1,26 @@
+import random
+rn = random.randint(0, 10)
+fnty = 0
+snty = 0
+trhval = True
+while trhval:
+  finpnum = int(input("Player1: "))
+  fnty +=1
+  if finpnum > rn:
+    print("try smaller number")
+  elif finpnum < rn:
+    print("try bigger number")
+  else:
+    print("That's right! Number of tries",fnty)
+    print("Winner is Player 1")
+  sinpnum = int(input("Player2: "))
+  snty +=1
+  if sinpnum > rn:
+    print("try smaller number")
+  elif sinpnum < rn:
+    print("try bigger number")
+  else:
+    print("That's right! Number of tries",snty)
+    print("Winner is Player 2")
+  if finpnum == rn or sinpnum == rn:
+    trhval = False
